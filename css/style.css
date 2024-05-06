@@ -32,7 +32,8 @@ h6 {
 
 li,
 a,
-p {
+p,
+.btn {
     font-family: var(--para-font);
 }
 
@@ -42,9 +43,9 @@ p {
 }
 
 .wrapper-form {
-    max-width: 1050px;
+    max-width: 950px;
     margin: 0 auto;
-    background-color: #e8eef1;
+    background-color: rgb(245 245 245);
 }
 
 /**
@@ -131,7 +132,7 @@ header #site-navigation ul li a:hover {
 
 .box-section .container_box .box {
     width: 100%;
-    background-color: #151818b5;
+    background-color: #000000eb;
     border-radius: 17px 79px 17px 10px;
     padding: 28px 34px;
     box-shadow: grey 5px 5px 5px;
@@ -143,7 +144,8 @@ header #site-navigation ul li a:hover {
     border-bottom: 2px solid rgb(131, 164, 131);
     border-radius: 8px;
     font-size: 32px;
-    color: #000000;
+    color: #ffffff;
+    text-shadow: grey 3px 3px 3px;
 }
 
 .box-section .container_box .box p {
@@ -154,6 +156,7 @@ header #site-navigation ul li a:hover {
 
 hr {
     margin: 0;
+    border-top: 4px dashed grey;
 }
 
 /*-  3.0 - Section(Form Section)
@@ -169,6 +172,7 @@ hr {
 -------------------------- */
 
 .form-section h2 {
+    
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -176,13 +180,61 @@ hr {
 }
 
 .form-section h2 .q-mark {
-    color: red;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: grey 0px 0px 2px;
 }
 
 /*-  --3.2 - Form
 -------------------------- */
 
+.container_form {
+    text-align: center;
+    padding: 22px 0;
+}
 
+.form-group label {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.form-group .textarea-label label{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-group input {
+    display: block;
+    text-align: center;
+    margin: 12px auto;
+    font-size: 25px;
+    border-radius: 13px 13px 0px 0px;
+    border-width: 0px 0px 2px 0px;
+    border-color: #000000;
+}
+
+.form-group textarea {
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 13px 5px;
+    padding: 3px 14px;
+    color: white;
+    background-color: #151a1d;
+    border: 2px solid #80808075;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #80808075;
+    border: 3px solid #151a1d;
+    border-radius: 4px;
+}
 
 /*- 4.0 - Footer
 -------------------------- */
