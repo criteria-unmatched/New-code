@@ -163,8 +163,8 @@ hr {
 -------------------------- */
 
 .form-section {
-    background: rgb(54,58,59);
-    background: radial-gradient(circle, rgba(54,58,59,1) 10%, rgba(255,249,249,1) 90%);
+    background: rgb(54, 58, 59);
+    background: radial-gradient(circle, rgba(54, 58, 59, 1) 10%, rgba(255, 249, 249, 1) 90%);
 
 }
 
@@ -172,11 +172,12 @@ hr {
 -------------------------- */
 
 .form-section h2 {
-    
+
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
     text-shadow: grey 3px 3px 2px;
+    letter-spacing: 2px;
 }
 
 .form-section h2 .q-mark {
@@ -197,15 +198,27 @@ hr {
     font-weight: 600;
     text-decoration: underline;
     margin-bottom: 10px;
+    letter-spacing: 0.7px;
 }
 
-.form-group .textarea-label label{
+.form-group .textarea-label label {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 0.7px;
 }
 
 .form-group input {
+    display: block;
+    text-align: center;
+    margin: 12px auto;
+    font-size: 25px;
+    border-radius: 13px 13px 0px 0px;
+    border-width: 0px 0px 2px 0px;
+    border-color: #000000;
+}
+
+.form-group select {
     display: block;
     text-align: center;
     margin: 12px auto;
