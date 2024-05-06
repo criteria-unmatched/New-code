@@ -41,6 +41,12 @@ p {
     margin: 0 auto;
 }
 
+.wrapper-form {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #e8eef1;
+}
+
 /**
 *
 *Table of Contents
@@ -51,8 +57,12 @@ p {
 *   2.0 - Section
 *    --2.1 - Container_Box
 *
-*   3.0 - Footer
+*   3.0 - Section(Form Section)
+*    --3.1 - Heading
+*    --3.2 - Form
 *
+*
+*   4.0 - Footer
 *
 */
 
@@ -65,7 +75,7 @@ header {
     background: linear-gradient(10deg, rgba(36, 31, 31, 1) 55%, rgba(224, 234, 236, 1) 100%);
 }
 
-/*- 1.1 - Site-Navigation 
+/*- --1.1 - Site-Navigation 
 -------------------------- */
 
 header #site-navigation {
@@ -106,20 +116,20 @@ header #site-navigation ul li a:hover {
 /*- 2.0 - Section
 -------------------------- */
 
-section {
+.box-section {
     padding: 30px 0;
     background: url('../images/bg-site3.jpg') no-repeat center center / cover;
 }
 
-/*- 2.1 -  Container_Box
+/*- --2.1 -  Container_Box
 -------------------------- */
 
-section .container_box {
+.box-section .container_box {
     display: flex;
     column-gap: 40px;
 }
 
-section .container_box .box {
+.box-section .container_box .box {
     width: 100%;
     background-color: #151818b5;
     border-radius: 17px 79px 17px 10px;
@@ -127,22 +137,54 @@ section .container_box .box {
     box-shadow: grey 5px 5px 5px;
 }
 
-section .container_box .box h2 {
+.box-section .container_box .box h2 {
     text-transform: uppercase;
     text-align: center;
-    border-bottom:2px solid rgb(131, 164, 131);
+    border-bottom: 2px solid rgb(131, 164, 131);
     border-radius: 8px;
     font-size: 32px;
     color: #000000;
 }
-section .container_box .box p {
+
+.box-section .container_box .box p {
     margin-top: 15px;
     color: azure;
     font-style: italic;
 }
 
+hr {
+    margin: 0;
+}
 
-/*- 3.0 - Footer
+/*-  3.0 - Section(Form Section)
+-------------------------- */
+
+.form-section {
+    background: rgb(54,58,59);
+    background: radial-gradient(circle, rgba(54,58,59,1) 10%, rgba(255,249,249,1) 90%);
+
+}
+
+/*-  --3.1 - Heading
+-------------------------- */
+
+.form-section h2 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: grey 3px 3px 2px;
+}
+
+.form-section h2 .q-mark {
+    color: red;
+}
+
+/*-  --3.2 - Form
+-------------------------- */
+
+
+
+/*- 4.0 - Footer
 -------------------------- */
 
 footer {
@@ -152,5 +194,4 @@ footer {
     text-align: center;
     padding: 20px;
     bottom: 0;
-    width: 100%;
 }
